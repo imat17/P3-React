@@ -1,0 +1,20 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body, html {
+    font-family: Roboto, Arial, Helvetica;
+}
+
+h1, h5, .rob {
+    font-family: Shrikhand, Arial, Helvetica;
+}

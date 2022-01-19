@@ -1,0 +1,68 @@
+@mixin btn-style {
+	background: rgb(147, 86, 220);
+	background: $degrade;
+	border-radius: 2rem;
+	padding: 0.9rem;
+	width: 12.5rem;
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: $white;
+	border: none;
+	cursor: pointer;
+	box-shadow: 3px 10px 5px $dark-gray;
+	transition: opacity, box-shadow 0.7s ease-in-out;
+	&:hover {
+		opacity: 0.85;
+		box-shadow: 3px 10px 5px #c5c5c5;
+	}
+}
+
+//---------------Mixins Responsive--------------------
+
+//-------------------Index----------------------
+
+@mixin responsiveRestoCard {
+	@media screen and (min-width: map-get($map: $breakpoint, $key: big)) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: 3rem;
+		margin: 2rem;
+	}
+}
+
+@mixin responsiveTitle {
+	@media screen and (min-width: map-get($map: $breakpoint, $key: big)) {
+		text-align: center;
+	}
+}
+
+@mixin responsiveFooter {
+	@media screen and (min-width: map-get($map: $breakpoint, $key: medium)) {
+		text-align: center;
+	}
+}
+
+@mixin responsiveStep {
+	@media screen and (min-width: map-get($map: $breakpoint, $key: mediumL)) {
+		width: 30%;
+		margin: 1.5rem auto;
+	}
+}
+
+//--------------------------Menu----------------------------
+
+@mixin responsiveMenu {
+	@media screen and (min-width: map-get($map: $breakpoint, $key: big)) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+		margin: 0 2.5rem;
+	}
+}
+
+@mixin responsiveImg {
+	@media screen and (min-width: map-get($map: $breakpoint, $key: big)) {
+		height: 28rem;
+	}
+}

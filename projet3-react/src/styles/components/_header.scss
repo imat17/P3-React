@@ -1,0 +1,15 @@
+.header {
+	background-color: $white;
+	padding: 0.8rem;
+	box-shadow: 10px 1px 1px gray;
+	position: relative;
+	&__logo {
+		text-align: center;
+	}
+	&__icon {
+		position: absolute;
+		top: 28px;
+		left: 20px;
+		color: black;
+	}
+}

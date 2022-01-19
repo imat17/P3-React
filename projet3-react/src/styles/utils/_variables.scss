@@ -1,0 +1,17 @@
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+$dark-green: #0f9070;
+$soft-gray: #f6f6f6;
+$dark-gray: #eaeaea;
+$white: #ffff;
+$primary-soft: #f5edff;
+$footer-color: #353535;
+$degrade: linear-gradient(352deg, $color-primary, $color-secondary 100%);
+$box-shadow: 3px 10px 5px $dark-gray;
+
+$breakpoint: (
+	big: 1140px,
+	medium: 500px,
+	mediumL: 900px,
+);

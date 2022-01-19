@@ -1,0 +1,131 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body, html {
+  font-family: Roboto, Arial, Helvetica;
+}
+
+h1, h5, .rob {
+  font-family: Shrikhand, Arial, Helvetica;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes rotateIn {
+  0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -360deg);
+    transform: rotate3d(0, 0, 1, -360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes scale-up-hor-right {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+}
+@keyframes bars {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.header {
+  background-color: #ffff;
+  padding: 0.8rem;
+  box-shadow: 10px 1px 1px gray;
+  position: relative;
+}
+.header__logo {
+  text-align: center;
+}
+.header__icon {
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  color: black;
+}
+
+.footer {
+  background: #353535;
+  padding: 1rem;
+  color: #ffff;
+}
+@media screen and (min-width: 500px) {
+  .footer {
+    text-align: center;
+  }
+}
+.footer__logo {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  width: 8rem;
+}
+.footer__contact {
+  padding: 1rem;
+}
+.footer__list {
+  padding-bottom: 0.6rem;
+}
+.footer__list--link {
+  color: #ffff;
+}
+.footer__icon {
+  padding-right: 0.6rem;
+}/*# sourceMappingURL=styles.css.map */

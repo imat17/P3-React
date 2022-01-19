@@ -1,0 +1,11 @@
+@import './settings';
+
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/keyframes';
+
+@import './components/header';
+@import './components/footer';
+
+@import './pages/home';
+@import './pages/restaurants';
