@@ -6,7 +6,12 @@ class Restaurant extends Component {
 		let { id, name, info, picture, alt } = this.props.item;
 		return (
 			<article className='restaurant__card'>
-				<NavLink to={`/restaurant/id=${id}`}>
+				<NavLink
+					to={{
+						pathname: '/restaurant',
+						search: `?id=${id}`,
+					}}
+				>
 					<img src={picture} className='restaurant__img' alt={alt} />
 					<span className='restaurant__new'>Nouveau</span>
 					<div className='restaurant__footer'>

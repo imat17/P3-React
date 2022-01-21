@@ -1,4 +1,4 @@
-export const allMenus = [
+export const menuList = [
 	{
 		id: 1,
 		restaurant: 'La palette du goût',
