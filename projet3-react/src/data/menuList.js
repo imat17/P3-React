@@ -68,6 +68,8 @@ export const menuList = [
 				price: 2300,
 			},
 		],
+	},
+	{
 		id: 2,
 		restaurant: 'La note enchantée',
 		picture: './media/stil-u2Lp8tXIcjw-unsplash.JPG',
@@ -143,6 +145,8 @@ export const menuList = [
 				price: 2300,
 			},
 		],
+	},
+	{
 		id: 3,
 		restaurant: 'À la Française',
 		picture: './media/toa-heftiba-DQKerTsQwi0-unsplash.JPG',
@@ -211,6 +215,8 @@ export const menuList = [
 				price: 2300,
 			},
 		],
+	},
+	{
 		id: 4,
 		restaurant: 'Le délice des sens',
 		picture: './media/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.JPG',
