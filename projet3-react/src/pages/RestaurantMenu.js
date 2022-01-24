@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Images from '../components/Restaurants/Images';
-import AllMenus from '../components/Restaurants/AllMenus';
+import MenusContainer from '../components/Restaurants/MenusContainer';
 import { menuList } from '../data/menuList';
 import { useLocation } from 'react-router-dom';
 
@@ -19,7 +19,10 @@ const RestaurantMenu = () => {
 			<Header />
 			<Images restaurantImg={targetedRestaurant.picture} />
 			<section className='menu'>
-				<AllMenus restaurantName={targetedRestaurant.restaurant} />
+				<MenusContainer
+					restaurantName={targetedRestaurant.restaurant}
+					restaurantMenu={targetedRestaurant.menus}
+				/>
 			</section>
 			<Footer />
 		</div>
