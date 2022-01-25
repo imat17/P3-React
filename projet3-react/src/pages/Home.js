@@ -9,7 +9,7 @@ import Loader from '../components/Loader';
 const Home = () => {
 	return (
 		<>
-			{/* <Loader /> */}
+			<Loader />
 			<Header />
 			<main className='main'>
 				<Explore />
