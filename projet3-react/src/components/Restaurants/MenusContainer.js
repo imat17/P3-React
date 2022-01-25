@@ -30,8 +30,10 @@ class MenusContainer extends Component {
 						return (
 							<div className='container__meal' key={typeOfMeal.id}>
 								<h4 className='container__title'>{typeOfMeal.value}</h4>
-								{mealInfo
-									.filter((meal) => meal.menus.type === typeOfMeal.value)
+								{this.props.restaurantMenu
+									.filter((meal) => {
+									return	meal.type === typeOfMeal.value;
+									})
 									.map((meal) => {
 										return <OneMeal key={meal.id} meal={meal} />;
 									})}

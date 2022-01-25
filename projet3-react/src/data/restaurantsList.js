@@ -5,6 +5,7 @@ export const restaurantsList = [
 		info: 'Ménilmontant',
 		alt: 'Restaurant Ménilmontant',
 		picture: './media/jay-wennington-N_Y88TWmGwA-unsplash.JPG',
+		isNew: true,
 	},
 	{
 		id: 2,
@@ -12,6 +13,7 @@ export const restaurantsList = [
 		info: 'Charonne',
 		alt: 'Restaurant la note enchantée',
 		picture: './media/stil-u2Lp8tXIcjw-unsplash.JPG',
+		isNew: true,
 	},
 	{
 		id: 3,
@@ -19,6 +21,7 @@ export const restaurantsList = [
 		info: 'Cité Rouge',
 		alt: 'Restaurant a la française',
 		picture: './media/toa-heftiba-DQKerTsQwi0-unsplash.JPG',
+		isNew: false,
 	},
 	{
 		id: 4,
@@ -26,5 +29,6 @@ export const restaurantsList = [
 		info: 'Folie-Méricourt',
 		alt: 'Restaurant le délice des sens',
 		picture: './media/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.JPG',
+		isNew: false,
 	},
 ];

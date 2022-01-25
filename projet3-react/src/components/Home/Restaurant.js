@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import New from './New';
 
 class Restaurant extends Component {
 	render() {
-		let { id, name, info, picture, alt } = this.props.item;
+		let { id, name, info, picture, alt, isNew } = this.props.item;
+
 		return (
 			<article className='restaurant__card'>
 				<NavLink
@@ -13,7 +15,7 @@ class Restaurant extends Component {
 					}}
 				>
 					<img src={picture} className='restaurant__img' alt={alt} />
-					<span className='restaurant__new'>Nouveau</span>
+					{isNew === true && <New />}
 					<div className='restaurant__footer'>
 						<div className='restaurant__info'>
 							<h4 className='restaurant__name'>{name}</h4>

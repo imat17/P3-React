@@ -1,11 +1,11 @@
 import React from 'react';
+import Arrow from './Arrow';
 
-const Header = () => {
+const Header = (props) => {
+	const { arrowDisplay } = props;
 	return (
 		<header className='header'>
-			<a className='header__icon' href='/'>
-				<i className='fas fa-arrow-left'></i>
-			</a>
+			{arrowDisplay && <Arrow />}
 			<h1 className='header__logo'>ohmyfood</h1>
 		</header>
 	);
